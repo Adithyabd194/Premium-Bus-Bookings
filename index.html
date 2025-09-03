@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Tempo Traveler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h2>Premium Tempo</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#fleet">Our Fleet</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Premium Tempo Traveler Services</h1>
+            <p>Luxury, Comfort, and Safety for All Your Travel Needs</p>
+            <button class="cta-button" id="bookNowBtn">Book Now</button>
+        </div>
+    </section>
+    
+
+
+    <!-- Fleet Section -->
+    <section id="fleet" class="fleet">
+        <h2>Our Premium Fleet</h2>
+        <div class="fleet-container">
+            <div class="category-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXnzFWX3F_TgdLuysaX5OcaktuOVFThEtyAw&s" alt="Fruits & Vegetables">
+                <h3>12-Seater Luxury Tempo</h3>
+                <p>Spacious and comfortable for small groups</p>
+                <ul>
+                    <li>AC & Heating</li>
+                    <li>Entertainment System</li>
+                    <li>Luxury Seating</li>
+                </ul>
+                
+            </div>
+            <div class="category-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1EL9nPAVSTDUJuqV56yPOqt62D1tOMTcgHg&s" alt="Fruits & Vegetables">
+                 <h3>26-Seater Premium Tempo</h3>
+                <p>Perfect for large groups and family outings</p>
+                <ul>
+                    <li>Spacious Legroom</li>
+                    <li>Premium Sound System</li>
+                    <li>Climate Control</li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Services Section -->
+     
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-item">
+                <div class="service-icon">🚌</div>
+                <h3>Corporate Travel</h3>
+                <p>Professional transportation for business events and corporate outings.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">🎯</div>
+                <h3>Wedding Services</h3>
+                <p>Elegant transportation for wedding parties and guests.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">🏞️</div>
+                <h3>Tour Packages</h3>
+                <p>Customized tour packages for sightseeing and group excursions.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">✈️</div>
+                <h3>Airport Transfers</h3>
+                <p>Timely and reliable airport pickup and drop services.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <h2>Book Your Journey</h2>
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="vehicleType">Vehicle Type</label>
+                <select id="vehicleType" required>
+                    <option value="">Select Vehicle</option>
+                    <option value="12-seater">12-Seater Luxury Tempo</option>
+                    <option value="18-seater">18-Seater Executive Tempo</option>
+                    <option value="26-seater">26-Seater Premium Tempo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Journey Date</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Special Requirements</label>
+                <textarea id="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit Booking Request</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p><strong>Address:</strong> 123 Premium Road, Travel City</p>
+                <p><strong>Phone:</strong> +1 234 567 8900</p>
+                <p><strong>Email:</strong> info@premiumtempo.com</p>
+                <p><strong>Hours:</strong> 24/7 Service Available</p>
+            </div>
+            <div class="contact-form">
+                <h3>Send a Message</h3>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Premium Tempo Traveler. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Booking Received!</h2>
+            <p>Thank you for your booking request. We will contact you shortly to confirm your journey details.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
